@@ -1,0 +1,56 @@
+$primary-color: #000000;
+$secondary-color: #6dcdef;
+$show-home-image: true;
+$background-image: url(../img/background.png);
+$background-opacity: 0.2;
+
+@mixin background {
+  @if $show-home-image {
+    &.bg-img {
+      background: $background-image;
+      background-attachment: fixed;
+      background-size: cover;
+
+      //Creates a pseudo-element after the element before i.e. bg-img (this creates the overlay)
+      &:after {
+        content:'';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba($primary-color, $background-opacity);
+        z-index: -1;
+      }
+    }
+  }
+}
+
+@mixin easeOut {
+  transition: all .3s ease-out;
+}
+
+//media query Mixins
+@mixin mediaSm{
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin mediaMd{
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mediaLg{
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin mediaXL{
+  @media screen and (min-width: 1171px) {
+    @content;
+  }
+}

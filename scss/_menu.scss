@@ -1,0 +1,18 @@
+.menu-btn {
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  cursor: pointer;
+
+  .btn-line {
+    background: #eaeaea;
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+  }
+}
+
+
+.menu {
+  visibility: hidden;
+}

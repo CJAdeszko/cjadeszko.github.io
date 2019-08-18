@@ -1,0 +1,52 @@
+section {
+  &#projects {
+    background: #1f4163;
+    display: grid;
+    grid-gap: .7rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    'chevron-up chevron-up chevron-up'
+    'projects-heading projects-heading projects-heading'
+    'item-1 item-2 item-3'
+    'chevron-down chevron-down chevron-down';
+
+
+    .projects-heading {
+      grid-area: projects-heading;
+    }
+
+    .chevron-up {
+      grid-area: chevron-up;
+      margin: 0 auto;
+    }
+
+    .chevron-down {
+      grid-area: chevron-down;
+      margin: 0 auto;
+    }
+
+    .item-1{
+      grid-area: item-1;
+    }
+
+    .item-2{
+      grid-area: item-2;
+    }
+
+    .item-3{
+      grid-area: item-3;
+    }
+
+    img {
+      background: #0d1c2b;
+      width: 100%;
+      border: 4px #fff solid;
+
+      &:hover {
+        opacity: 0.5;
+        border: 4px $secondary-color solid;
+        @include easeOut;
+      }
+    }
+  }
+}

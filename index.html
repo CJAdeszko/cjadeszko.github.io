@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Red+Hat+Display|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>C.J. Adeszko</title>
+    <script src="https://kit.fontawesome.com/047798b5fb.js"></script>
+  </head>
+  <body id="bg-img">
+    <div class="alert">
+      <p>Sorry! <br/> That app hasn't been deployed to a live server yet but feel free to check it out on Github!</p>
+      <div><span onclick="closeAlert()">Close</span></div>
+    </div>
+
+    <!-- main section -->
+    <section id="home" class="bg-img">
+      <h1 class="lg-heading">C.J. <span class="text-secondary">Adeszko</span></h1>
+      <h2 class="sm-heading">Web Developer. Programmer. Musician. Gamer.</h2>
+
+      <div class="icons">
+        <a href="https://www.linkedin.com/in/cjadeszko/" target="_blank">
+          <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        <a href="https://github.com/CJAdeszko" target="_blank">
+          <i class="fab fa-github fa-2x"></i>
+        </a>
+      </div>
+      <div class="chevron chevron-down">
+        <a href="#about">
+          <i class="fas fa-chevron-down fa-7x"></i>
+        </a>
+      </div>
+    </section>
+
+
+    <!-- about section -->
+    <section id="about">
+      <div class="chevron chevron-up">
+        <a href="#home">
+          <i class="fas fa-chevron-up fa-7x"></i>
+        </a>
+      </div>
+      <h1 class="lg-heading about-heading">About <span class="text-secondary">Me</span></h1>
+      <div class="about-image">
+        <p>image goes here</p>
+      </div>
+      <div class="about-text">
+        <p>
+          I'm C.J. Adeszko - an Illinois transplant living in Scottsdale, AZ. Creativity and passion are probably two of my most prominent character traits.
+        </p>
+        <p>
+          After working in the advertising industry for a couple of years, I decided to make a career change and become a developer.
+        </p>
+        <p>
+          I participated in Bloc's Software Developer curriculum online while working
+          full-time and learned the fundamentals of HTML, CSS, JavaScript, jQuery, Ruby, Ruby on Rails, PostgreSQL, and Computer Science principles such as data structures, ORM databases,
+          and searching and sorting algorithms.
+        </p>
+        <p>
+          When I'm coding, I focus on creating a maintainable codebase that follows convention and presents a clean design
+          to users. I'm still learning every day and I welcome the opportunity to work with more experienced developers as it provides the potential for
+          personal and professional growth.
+        </p>
+        <p>
+          When I'm not working to hone my skills as a developer, you're likely to find me playing my guitar and recording music, driving aimlessly through the mountains,
+          or gaming on Xbox.
+        </p>
+        <div class="resume-btn">
+          <a href="/img/Resume.png" target="_blank" >View My Resume</a>
+        </div>
+      </div>
+      <div class="chevron chevron-down">
+        <a href="#projects">
+          <i class="fas fa-chevron-down fa-7x"></i>
+        </a>
+      </div>
+    </section>
+
+
+    <!-- projects section -->
+    <section id="projects">
+      <div class="chevron chevron-up">
+        <a href="#about">
+          <i class="fas fa-chevron-up fa-7x"></i>
+        </a>
+      </div>
+      <h1 class="lg-heading projects-heading">My <span class="text-secondary">Projects</span></h1>
+      <div class="item-1">
+        <a href="#!">
+          <img src="img/projects/showsearch.png" alt="ShowSearch">
+        </a>
+        <a href="https://salty-spire-27923.herokuapp.com/" target="_blank" class="btn btn-light">
+          <i class="fas fa-eye"></i> ShowSearch
+        </a>
+        <a href="https://github.com/CJAdeszko/ShowSearch" target="_blank" class="btn btn-dark">
+          <i class="fab fa-github"></i> Github
+        </a>
+      </div>
+
+      <div class="item-2">
+        <a href="#!">
+          <img src="img/projects/rubygem.png" alt="Array_Arithmetic">
+        </a>
+        <a href="https://rubygems.org/gems/array_arithmetic" target="_blank" class="btn btn-light">
+          <i class="fas fa-eye"></i> Array_Arithmetic
+        </a>
+        <a href="https://github.com/CJAdeszko/array_arithmetic" target="_blank" class="btn btn-dark">
+          <i class="fab fa-github"></i> Github
+        </a>
+      </div>
+
+      <div class="item-3">
+        <a href="#!">
+          <img src="img/projects/dailypetpics.png" alt="DailyPetPics">
+        </a>
+        <a href="#!" class="btn btn-light undeployed-btn" onclick="serverAlert()">
+          <i class="fas fa-eye"></i> DailyPetPics
+        </a>
+        <a href="https://github.com/CJAdeszko/daily-pet-pics" target="_blank" class="btn btn-dark">
+          <i class="fab fa-github"></i> Github
+        </a>
+      </div>
+
+      <div class="chevron chevron-down">
+        <a href="#contact">
+          <i class="fas fa-chevron-down fa-7x"></i>
+        </a>
+      </div>
+    </section>
+
+
+    <!-- contact section -->
+    <section id="contact">
+      <div class="chevron chevron-up">
+        <a href="#projects">
+          <i class="fas fa-chevron-up fa-7x"></i>
+        </a>
+      </div>
+      <h1 class="lg-heading contact-heading">Contact <span class="text-secondary">Me</span></h1>
+      <div class="form-row">
+        <form action="https://getsimpleform.com/messages?form_api_token=9aaab3d9d088710df0852c01a811f9fd" method="post">
+          <input type='hidden' name='redirect_to' value='full-url/thank-you/' />
+          <label for="form-name">Name: </label><br/>
+          <input id="form-name" type='text' name='name' placeholder='Your Full Name' /><br/>
+          <label for="form-email">Email: </label><br/>
+          <input id="form-email" type='email' name='email' placeholder='Your E-mail Address' /><br/>
+          <label for="form-message">Message: </label><br/>
+          <textarea id="form-message" name='message' placeholder='Write your message ...'></textarea><br/>
+          <input id="form-submit" type='submit' value='Send Message' />
+        </form>
+      </div>
+    </section>
+
+    <footer id="main-footer">
+      C.J. Adeszko &copy; 2019
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

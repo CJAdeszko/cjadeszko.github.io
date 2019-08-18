@@ -1,0 +1,171 @@
+@import 'config';
+@import 'menu';
+@import 'about';
+@import 'projects';
+@import 'contact';
+
+
+//all elements
+* {
+  box-sizing: border-box;
+  font-family: 'Noto Sans TC','Roboto', 'Red Hat Display', sans-serif;
+}
+
+//body element
+body {
+  color: #eaeaea;
+  height: 100%;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+//section element
+section {
+  @include background;
+  min-height: 100vh;
+  padding: 1.2rem 4rem;
+
+  //section element with id='home'
+  &#home {
+    overflow: hidden;
+    h1 {
+      margin-top: 20vh;
+    }
+
+    .chevron-down {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+
+//header element
+// header {
+//   position: fixed;
+//   width: 100%;
+//   z-index: 2;
+// }
+
+//h1, h2, h3 elements
+h1,h2,h3 {
+  margin: 0;
+
+  &.lg-heading {
+    font-size: 6rem;
+    padding: .2rem .5rem;
+  }
+
+  &.sm-heading {
+    margin-bottom: .5rem;
+    padding: .2rem .5rem;
+  }
+}
+
+
+//anchor elements
+a {
+  color: #eaeaea;
+  text-decoration: none;
+}
+
+
+//text-secondary class
+.text-secondary {
+  color: $secondary-color;
+}
+
+
+//icons class
+.icons {
+  padding: .2rem .5rem;
+
+  a {
+    &:hover {
+      color: $secondary-color;
+      @include easeOut();
+    }
+  }
+}
+
+.chevron {
+  a {
+    &:hover {
+      color: $secondary-color;
+      @include easeOut();
+    }
+  }
+}
+
+//button styles
+.btn {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+  &:hover {
+    background: $secondary-color;
+  }
+}
+
+.btn-dark {
+  @extend .btn;
+  background: #0d1c2b;
+  color: #fff;
+}
+
+.btn-light {
+  @extend .btn;
+  background: #eaeaea;
+  color: #333;
+}
+
+
+//alert div for non-deployed apps
+.alert {
+  position: fixed;
+  background: #fff;
+  color: #0d1c2b;
+  left: calc(50vw - 200px);
+  top: calc(50vh - 75px);
+  height: 150px;
+  width: 400px;
+  padding: 5px 5px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 2px #0d1c2b;
+  z-index: 5;
+  display: none;
+
+  p {
+    text-align: center;
+  }
+
+  div {
+    margin: 0 160px;
+    span {
+      display: flex;
+      justify-content: center;
+      background: #6dcdef;
+      color: #eaeaea;
+      border-radius: 5px;
+      padding: 5px;
+      width: 100%;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+}
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: #1f4163;
+  color: #eaeaea;
+  height: 60px;
+}
+
+@import 'mobile'
