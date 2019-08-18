@@ -16,6 +16,15 @@ section {
 
     .about-image {
       grid-area: about-image;
+      background-image: url("/img/portrait.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 300px;
+      margin: auto;
+      border-radius: 50%;
+      border: $secondary-color 3px solid;
     }
 
     .about-text {
