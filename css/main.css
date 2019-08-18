@@ -52,7 +52,6 @@ section#about {
     text-align: center;
     cursor: pointer; }
     section#about .resume-btn:hover {
-      padding: .7rem .7rem;
       background-color: #6dcdef;
       transition: all .3s ease-out; }
 

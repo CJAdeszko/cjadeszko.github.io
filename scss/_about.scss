@@ -56,7 +56,6 @@ section {
       cursor: pointer;
 
       &:hover{
-        padding: .7rem .7rem;
         background-color: #6dcdef;
         @include easeOut;
       }
