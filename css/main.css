@@ -139,7 +139,6 @@ section#contact {
     section#contact #form-submit:hover {
       transition: all .3s ease-out;
       background-color: #6dcdef;
-      padding: .7rem 1rem;
       cursor: pointer; }
 
 * {

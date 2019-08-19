@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=500, initial-scale=0.86">
+    <meta name="viewport" content="width=500, initial-scale=0.86, maximum-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Red+Hat+Display|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/main.css">
     <title>C.J. Adeszko</title>
@@ -142,11 +142,11 @@
         <form action="https://getsimpleform.com/messages?form_api_token=9aaab3d9d088710df0852c01a811f9fd" method="post">
           <input type='hidden' name='redirect_to' value='full-url/thank-you/' />
           <label for="form-name">Name: </label><br/>
-          <input id="form-name" type='text' name='name' placeholder='Your Full Name' /><br/>
+          <input id="form-name" type='text' name='name' placeholder='Your Full Name' required/><br/>
           <label for="form-email">Email: </label><br/>
-          <input id="form-email" type='email' name='email' placeholder='Your E-mail Address' /><br/>
+          <input id="form-email" type='email' name='email' placeholder='Your E-mail Address' required/><br/>
           <label for="form-message">Message: </label><br/>
-          <textarea id="form-message" name='message' placeholder='Write your message ...'></textarea><br/>
+          <textarea id="form-message" name='message' placeholder='Write your message ...' required></textarea><br/>
           <input id="form-submit" type='submit' value='Send Message' />
         </form>
       </div>
