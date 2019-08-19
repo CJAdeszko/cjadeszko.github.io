@@ -22,7 +22,7 @@ section#about {
     grid-area: about-heading; }
   section#about .about-image {
     grid-area: about-image;
-    background-image: url("/img/portrait.JPG");
+    background-image: url("/img/portrait.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -269,6 +269,8 @@ a {
       line-height: 1;
       margin-bottom: 1rem; }
   section h1, section h2 {
+    text-align: center; }
+  section .icons {
     text-align: center; }
   section#about {
     grid-template-areas: 'chevron-up chevron-up' 'about-heading about-heading' 'about-image about-image' 'about-text about-text' 'chevron-down chevron-down';
