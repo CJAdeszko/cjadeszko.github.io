@@ -3,6 +3,7 @@
 @import 'about';
 @import 'projects';
 @import 'contact';
+@import 'showsearch';
 
 
 //all elements
@@ -32,6 +33,7 @@ section {
   //section element with id='home'
   &#home {
     overflow: hidden;
+    
     h1 {
       margin-top: 20vh;
     }
@@ -168,4 +170,4 @@ a {
   height: 60px;
 }
 
-@import 'mobile'
+@import 'mobile';

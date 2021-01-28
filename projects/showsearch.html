@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=500, initial-scale=0.86, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Red+Hat+Display|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>C.J. Adeszko - ShowSearch</title>
+    <script src="https://kit.fontawesome.com/047798b5fb.js"></script>
+  </head>
+  <body id="showsearch">
+    <div class="project-container">
+      <h1 class="lg-heading projects-heading">Show<span class="text-secondary">Search</span></h1>
+
+      <div class="project-image">
+        <img src="../img/projects/showsearch.png" alt="ShowSearch">
+      </div>
+
+      <div class="project-info">
+        <h2 class="sm-heading text-secondary">Purpose</h2>
+        <p>
+        ShowSearch was created as a part of the final certification process of the Bloc Software Developer curriculum. To replicate
+        the technical interview process, I was given one week to design and implement a web application based on a set of technical and
+        functional requirements outlined by Bloc. At the end of the week, I would present my application in it's final state, functional or not,
+        and be evaluated by a professional software developer on my implementation. The task was to create a TV show discovery application
+        using the open-source TMDb API. Some of the basic requirements for the project included:
+        <ul>
+          <li>Create a full-stack application with a backend that communicates with the movie API.</li>
+          <li>The front-end should be intuitive to use.</li>
+          <li>Accompany the code with a full test suite.</li>
+          <li>Deploy the site to a web host.</li>
+          <li>When first loaded, there should be a list of popular TV shows and a search bar.</li>
+          <li>Upon searching for a TV show in the search bar, the user should see a list of shows whose title matches the search.</li>
+          <li>After clicking on a TV show, the user should be taken to a page with more information about that particular TV show.</li>
+        </ul>
+        </p>
+
+        <h2 class="sm-heading text-secondary">Implementation</h2>
+        <p>
+          The application was required to be "full-stack", so I opted to implement it using Ruby on Rails without the use of ActiveRecord because
+          no database actions were necessary since all movie data was being fetched from the TMDb API. The back-end is coded in Ruby and uses the HTTParty Rubygem
+          to help fetch data from the API. The front-end was styled with a combination of MaterializeCSS and custom CSS.
+        </p>
+
+        <h3 class="sm-heading text-secondary">Technologies Used:</h3>
+        <p>Ruby, Ruby on Rails, HTML, CSS, MaterializeCSS</p>
+
+
+        <p>Check out the application <a href="https://salty-spire-27923.herokuapp.com/" target="_blank"><span class="text-secondary">here</span>.</a></p>
+
+        <div class="back-btn">
+          <a href="/index.html#projects">Back</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

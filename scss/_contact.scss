@@ -20,8 +20,6 @@ section {
 
     .form-row {
       grid-area: form-row;
-      padding: 0 calc(10%);
-      width: 100%;
     }
 
     #form-name{
@@ -35,7 +33,6 @@ section {
         @include easeOut;
         border: 3px solid #6dcdef;
       }
-
     }
 
     #form-email{

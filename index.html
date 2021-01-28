@@ -2,18 +2,13 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=500, initial-scale=0.86, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Red+Hat+Display|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/main.css">
     <title>C.J. Adeszko</title>
     <script src="https://kit.fontawesome.com/047798b5fb.js"></script>
   </head>
-  <body id="bg-img">
-    <div class="alert">
-      <p>Sorry! <br/> That app hasn't been deployed to a live server yet but feel free to check it out on Github!</p>
-      <div><span onclick="closeAlert()">Close</span></div>
-    </div>
-
+  <body>
     <!-- main section -->
     <section id="home" class="bg-img">
       <h1 class="lg-heading">C.J. <span class="text-secondary">Adeszko</span></h1>
@@ -87,7 +82,7 @@
       </div>
       <h1 class="lg-heading projects-heading">My <span class="text-secondary">Projects</span></h1>
       <div class="item-1">
-        <a href="#!">
+        <a href="projects/showsearch.html">
           <img src="img/projects/showsearch.png" alt="ShowSearch">
         </a>
         <a href="https://salty-spire-27923.herokuapp.com/" target="_blank" class="btn btn-light">
@@ -99,7 +94,7 @@
       </div>
 
       <div class="item-2">
-        <a href="#!">
+        <a href="projects/arrayarithmetic.html">
           <img src="img/projects/rubygem.png" alt="Array_Arithmetic">
         </a>
         <a href="https://rubygems.org/gems/array_arithmetic" target="_blank" class="btn btn-light">
@@ -111,7 +106,7 @@
       </div>
 
       <div class="item-3">
-        <a href="#!">
+        <a href="projects/dailypetpics.html">
           <img src="img/projects/dailypetpics.png" alt="DailyPetPics">
         </a>
         <a href="#!" class="btn btn-light undeployed-btn" onclick="serverAlert()">
@@ -121,36 +116,12 @@
           <i class="fab fa-github"></i> Github
         </a>
       </div>
-
-      <div class="chevron chevron-down">
-        <a href="#contact">
-          <i class="fas fa-chevron-down fa-7x"></i>
-        </a>
-      </div>
     </section>
 
-
-    <!-- contact section -->
-    <section id="contact">
-      <div class="chevron chevron-up">
-        <a href="#projects">
-          <i class="fas fa-chevron-up fa-7x"></i>
-        </a>
-      </div>
-      <h1 class="lg-heading contact-heading">Contact <span class="text-secondary">Me</span></h1>
-      <div class="form-row">
-        <form action="https://getsimpleform.com/messages?form_api_token=9aaab3d9d088710df0852c01a811f9fd" method="post">
-          <input type='hidden' name='redirect_to' value='full-url/thank-you/' />
-          <label for="form-name">Name: </label><br/>
-          <input id="form-name" type='text' name='name' placeholder='Your Full Name' required/><br/>
-          <label for="form-email">Email: </label><br/>
-          <input id="form-email" type='email' name='email' placeholder='Your E-mail Address' required/><br/>
-          <label for="form-message">Message: </label><br/>
-          <textarea id="form-message" name='message' placeholder='Write your message ...' required></textarea><br/>
-          <input id="form-submit" type='submit' value='Send Message' />
-        </form>
-      </div>
-    </section>
+    <div class="alert">
+      <p>Sorry! <br/> That app hasn't been deployed to a live server yet but feel free to check it out on Github!</p>
+      <div><span onclick="closeAlert()">Close</span></div>
+    </div>
 
     <footer id="main-footer">
       C.J. Adeszko &copy; 2019

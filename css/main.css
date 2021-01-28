@@ -96,9 +96,7 @@ section#contact {
   section#contact .contact-heading {
     grid-area: contact-heading; }
   section#contact .form-row {
-    grid-area: form-row;
-    padding: 0 calc(10%);
-    width: 100%; }
+    grid-area: form-row; }
   section#contact #form-name {
     width: 100%;
     min-height: 40px;
@@ -140,6 +138,24 @@ section#contact {
       transition: all .3s ease-out;
       background-color: #6dcdef;
       cursor: pointer; }
+
+#showsearch {
+  background: #0d1c2b; }
+  #showsearch .back-btn {
+    display: flex;
+    justify-content: center;
+    background-color: #0d1c2b;
+    color: #eaeaea;
+    border: 3px solid #eaeaea;
+    border-radius: 5px;
+    padding: 5px;
+    width: 200px;
+    margin: 0 calc(50% - 100px);
+    text-align: center;
+    cursor: pointer; }
+    #showsearch .back-btn:hover {
+      background-color: #6dcdef;
+      transition: all .3s ease-out; }
 
 * {
   box-sizing: border-box;
@@ -258,13 +274,14 @@ a {
   section#about {
     grid-template-columns: repeat(3, 1fr); }
   section#projects {
+    grid-template-columns: repeat(3, 1fr); }
+  section#contact {
     grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 768px) {
-  main {
-    align-items: center;
-    text-align: center; }
-    main .lg-heading {
+  body {
+    align-items: center; }
+    body .lg-heading {
       line-height: 1;
       margin-bottom: 1rem; }
   section h1, section h2 {

@@ -1,0 +1,53 @@
+#showsearch {
+  background: #0d1c2b;
+
+  // .project-container {
+  //   display: grid;
+  //   grid-template-area:
+  //   'projects-heading projects-heading projects-heading'
+  //   'project-image project-image project-image'
+  //   'purpose-heading purpose-heading purpose-heading'
+  //   'purpose-paragraph purpose-paragraph purpose-paragraph'
+  //   'implementation-heading implementation-heading implementation-heading';
+  //   grid-template-columns: repeat(3, 1fr);
+  //
+  //   .projects-heading {
+  //     grid-area: projects-heading;
+  //   }
+  //
+  //   .project-image {
+  //     grid-area: project-image;
+  //   }
+  //
+  //   #purpose-heading {
+  //     grid-area: purpose-heading;
+  //   }
+  //
+  //   #purpose-paragraph {
+  //     grid-area: purpose-paragraph;
+  //   }
+  //
+  //   #implementation-heading{
+  //     grid-area: implementation-heading;
+  //   }
+  // }
+
+  .back-btn {
+    display: flex;
+    justify-content: center;
+    background-color: #0d1c2b;
+    color: #eaeaea;
+    border: 3px solid #eaeaea;
+    border-radius: 5px;
+    padding: 5px;
+    width: 200px;
+    margin: 0 calc(50% - 100px);
+    text-align: center;
+    cursor: pointer;
+
+    &:hover{
+      background-color: #6dcdef;
+      @include easeOut;
+    }
+  }
+}

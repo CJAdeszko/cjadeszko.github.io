@@ -31,14 +31,17 @@
     &#projects {
       grid-template-columns: repeat(3, 1fr);
     }
+
+    &#contact {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 }
 
 //tablets and small laptops
 @include mediaMd {
-  main {
+  body {
     align-items: center;
-    text-align: center;
 
     .lg-heading {
       line-height: 1;
